@@ -5,10 +5,10 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    server:
-      waitTimeInMsWhenSyncEmpty: 0
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false
 
-      
 security:
   user:
     name: ${security.user.name}
